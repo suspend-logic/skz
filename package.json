@@ -1,0 +1,19 @@
+{
+  "name": "skz",
+  "version": "1.0.0",
+  "description": "skz is a utility package for JS, mostly filled with stuff I find useful.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "cover": "nyc --reporter=html mocha"
+  },
+  "repository": "https://github.com/suspend-logic/skz",
+  "author": "Paul Blid",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1",
+    "nyc": "^11.4.1"
+  }
+}
