@@ -37,7 +37,15 @@ describe("sieve", () => {
             result.should.have.property("a").eq(obj.a);
             result.should.have.property("b").eq(obj.b);
             result.should.not.have.property("f");
-        })
+        });
+
+        it("Returns inherited properties", () => {
+            const obj = new String("test string"); // jshint ignore:line
+            const result = sieve(obj, ["toLowerCase"]);
+
+            should.exist(result);
+            result.should.have.property("toLowerCase").eq(obj.toLowerCase);
+        });
     });
 
     describe("Arrays", () => {

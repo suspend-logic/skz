@@ -12,7 +12,7 @@
             // Use all the props and iterate the object
             const sievedObj = {};
             for(let i = 0; i < props.length; ++i) {
-                if(Object.prototype.hasOwnProperty.call(obj, props[i])) {
+                if(props[i] in obj) {
                     sievedObj[props[i]] = obj[props[i]];
                 }
             }

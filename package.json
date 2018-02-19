@@ -1,6 +1,6 @@
 {
   "name": "skz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "skz is a utility package for JS, mostly filled with stuff I find useful.",
   "main": "index.js",
   "scripts": {
